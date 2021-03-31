@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Feedback">
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/homeicon" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Summary"
+        android:textColor="@color/purple"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+    <LinearLayout
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/totalReps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/purple"
+        android:text="Total Reps   : "
+        android:layout_weight="1"
+        android:textAlignment="center"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 "
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/correctReps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/totalReps">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/purple"
+            android:text="Correct        : "
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/incorrectReps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/correctReps">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/purple"
+            android:text="Incorrect     : "
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/purple"
+
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+    <VideoView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/stats"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/videoView" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/videoView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="Retry"
+    android:textSize="21sp"
+    android:textColor="@color/black"
+    android:drawableLeft="@drawable/refresh"
+    style="?attr/materialButtonOutlinedStyle"
+    />
+
+</RelativeLayout>
