@@ -2,7 +2,23 @@
 Android Application for fitness geeks to workout without any physical trainers. The app provides valuable feedback to the user regarding their workout by recording realtime video.
 
 **Introduction:**
+This repository contains the source code for the android application i.e.  WorkoutVis. We will highlight the major implementation details, frameworks used, and the installation methods within the Readme file.
 
+**Implementation Details**
+
+Android Application:
+
+Andnroid application is developed using JAVA, Kotlin, XML. Java has been used for dynamic interaction of the client, Kotlin has beed used for the preprocessing of the realtime video and feed it to the deep learning model i.e. PoseNET using tensorflow and XML has been used for creating static front end of the application.
+
+**Frameworks and APIs:**
+Realtime Video:
+**CameraX API **has been used to record realtime workout and render it through multithreading. The API allows the frames to be processed in separate frames, therefore, increasing the efficiency of the application.
+
+PoseNET Integration:
+Deep learning model i.e. PoseNET has been integrated inside the mobile device using **TFLite**
+
+**Installation**
+The project can be cloned to local directory using following git command
 
 
 
