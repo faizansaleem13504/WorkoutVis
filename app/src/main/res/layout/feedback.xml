@@ -51,6 +51,7 @@
 
         />
         <TextView
+            android:id="@+id/totalRepsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12 "
@@ -79,6 +80,7 @@
 
             />
         <TextView
+            android:id="@+id/correctRepsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="11"
@@ -107,6 +109,7 @@
 
             />
         <TextView
+            android:id="@+id/incorrectRepsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
@@ -117,6 +120,35 @@
 
             />
     </LinearLayout>
+        <LinearLayout
+            android:id="@+id/incorrectNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@id/correctReps">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/purple"
+                android:text="Incorrect Reps: "
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:id="@+id/incorrectRepsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="@color/purple"
+
+                />
+        </LinearLayout>
 
     </LinearLayout>
     <VideoView
